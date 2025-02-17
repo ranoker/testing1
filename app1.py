@@ -8,9 +8,9 @@ app = Flask(__name__)
 items = []
 
 # GET all items
-@app.route('/api/items', methods=['GET'])
-def get_items():
-    return jsonify(items)
+@app.route("/", methods=["GET"])
+def hello():
+    return "HELLO"
 
 # GET single item
 @app.route('/api/items/<string:kitu>', methods=['GET'])
